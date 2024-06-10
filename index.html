@@ -33,21 +33,6 @@
         .instructions p {
             margin: 10px 0;
         }
-        .form-group {
-            margin: 15px 0;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        .form-group input[type="text"],
-        .form-group input[type="email"],
-        .form-group input[type="file"] {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
         .button {
             display: block;
             width: 100%;
@@ -58,6 +43,7 @@
             border: none;
             border-radius: 4px;
             cursor: pointer;
+            text-decoration: none;
         }
         .button:hover {
             background-color: #218838;
@@ -93,32 +79,16 @@
         <ol>
             <li>
                 <strong>Isi Formulir Pendaftaran:</strong>
-                <form>
-                    <div class="form-group">
-                        <label for="name">Nama:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="google_service">Unggah File <code>google_service.json</code>:</label>
-                        <input type="file" id="google_service" name="google_service" accept=".json" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="service_account">Unggah File <code>service_account.json</code>:</label>
-                        <input type="file" id="service_account" name="service_account" accept=".json" required>
-                    </div>
-                    <button type="button" class="button" onclick="sendToWhatsApp()">Kirim ke WhatsApp</button>
-                </form>
+                <p>Isi formulir pendaftaran dengan data yang diperlukan seperti nama, email, dan file konfigurasi. Formulir ini akan tersedia di langkah berikutnya.</p>
             </li>
-            <li><strong>Pembayaran:</strong>
-                <p>Setelah kami menerima formulir pendaftaran Anda, kami akan mengirimkan detail pembayaran melalui WhatsApp.</p>
+            <li>
+                <strong>Pembayaran:</strong>
+                <p>Setelah mengisi formulir pendaftaran, kami akan mengirimkan detail pembayaran melalui WhatsApp.</p>
                 <p>Lakukan pembayaran sebesar Rp.100.000 ke rekening yang kami sediakan.</p>
                 <p>Konfirmasikan pembayaran Anda dengan mengirimkan bukti transfer melalui WhatsApp.</p>
             </li>
-            <li><strong>Verifikasi:</strong>
+            <li>
+                <strong>Verifikasi:</strong>
                 <p>Kami akan memverifikasi pembayaran Anda dalam waktu 1x24 jam.</p>
                 <p>Setelah verifikasi berhasil, Anda akan menerima email konfirmasi dan akun Anda akan aktif dengan masa gratis biaya bulanan untuk bulan pertama.</p>
             </li>
@@ -131,14 +101,9 @@
         <p><strong>WhatsApp:</strong> [Nomor WhatsApp]</p>
         <p><strong>Email:</strong> [Alamat Email]</p>
     </div>
+    
+    <a href="form-pendaftaran.html" class="button">Lanjutkan</a>
 </div>
-
-<script>
-    function sendToWhatsApp() {
-        // Function to handle sending form data to WhatsApp
-        alert('Formulir telah dikirim ke WhatsApp!');
-    }
-</script>
 
 </body>
 </html>
