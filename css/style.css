@@ -5,24 +5,69 @@ body {
     padding: 0;
     background-color: #f4f4f4;
 }
+
 .header {
     background-color: #B71C1C;
     color: white;
-    padding: 20px 0;
+    padding: 10px 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.app-icon {
+    width: 80px; /* Sesuaikan ukuran ikon sesuai kebutuhan */
+    margin-right: 10px;
+}
+
+.app-info {
     text-align: center;
 }
+
 .nav {
-    display: flex;
-    justify-content: center;
     background-color: #8A1717;
-    padding: 10px;
+    text-align: center;
 }
-.nav a {
+
+.nav .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.nav .dropdown .dropbtn {
+    background-color: #8A1717;
     color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    padding: 14px 16px;
 }
+
+.nav .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.nav .dropdown .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
 .container {
     max-width: 800px;
     margin: 20px auto;
@@ -31,30 +76,37 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 h1, h2 {
     color: #B71C1C;
 }
+
 p {
     color: #555;
 }
+
 .button-container {
     text-align: center;
     margin-top: 20px;
 }
+
 .button-container img {
     width: 200px;
     cursor: pointer;
 }
+
 .features {
     list-style-type: none;
     padding: 0;
 }
+
 .features li {
     background: #fde0dc;
     margin: 10px 0;
     padding: 10px;
     border-radius: 5px;
 }
+
 footer {
     text-align: center;
     padding: 10px;
