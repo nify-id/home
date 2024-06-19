@@ -8,28 +8,68 @@
 </head>
 <body>
     <!-- Header Section -->
-    <div class="header">
-        <h1>Kebijakan Privasi</h1>
-    </div>
+    <header class="header">
+        <div class="header-content">
+            <img src="images/app_icon.png" alt="Mitra PPOB Icon" class="app-icon">
+            <div class="app-info">
+                <h1>Mitra PPOB</h1>
+            </div>
+            <button class="menu-button" onclick="toggleNav()">&#9776;</button>
+        </div>
+    </header>
 
-    <!-- Navigation Menu -->
-    <div class="nav">
+    <!-- Navigation Menu (Sidebar) -->
+    <nav id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a>
         <a href="index.html">Home</a>
-        <a href="form-pendaftaran.html">Pendaftaran</a>
+        <a href="info-pendaftaran.html">Info Pendaftaran</a>
         <a href="kebijakan-privasi.html">Kebijakan Privasi</a>
         <a href="syarat-dan-ketentuan.html">Syarat dan Ketentuan</a>
         <a href="tentang-kami.html">Tentang Kami</a>
-    </div>
+    </nav>
 
     <!-- Main Content Container -->
     <div class="container">
         <h2>Kebijakan Privasi</h2>
-        <p>Data yang kami simpan dipastikan aman. Data mungkin bisa saja publik. Nama, email, dan foto profil adalah data yang tidak akan dipublikasikan. Data seperti akun Firebase, Digiflazz, dan data sensitif lainnya akan disimpan secara aman dan tidak akan dibagikan kepada siapapun.</p>
+        <p>Mitra PPOB berkomitmen untuk melindungi privasi dan keamanan data pengguna kami. Berikut adalah kebijakan privasi kami:</p>
+
+        <h3>Pengumpulan Data</h3>
+        <p>Kami mengumpulkan data berikut untuk menyediakan dan meningkatkan layanan kami:</p>
+        <ul>
+            <li>Nama</li>
+            <li>Email</li>
+            <li>Foto Profil</li>
+        </ul>
+
+        <h3>Penggunaan Data</h3>
+        <p>Data yang kami kumpulkan digunakan untuk:</p>
+        <ul>
+            <li>Menyediakan dan mengelola layanan kami</li>
+            <li>Memperbaiki layanan kami</li>
+            <li>Memberikan dukungan pelanggan</li>
+        </ul>
+
+        <h3>Keamanan Data</h3>
+        <p>Kami memastikan bahwa data Anda disimpan dengan aman. Data seperti akun Firebase, Digiflazz, dan data sensitif lainnya akan disimpan secara aman dan tidak akan dibagikan kepada siapapun.</p>
+
+        <h3>Publikasi Data</h3>
+        <p>Data seperti nama, email, dan foto profil tidak akan dipublikasikan tanpa persetujuan Anda. Kami menghargai privasi Anda dan berkomitmen untuk menjaga kerahasiaan data Anda.</p>
     </div>
 
     <!-- Footer Section -->
     <footer>
         &copy; 2024 Mitra PPOB. All rights reserved.
     </footer>
+
+    <script>
+        function toggleNav() {
+            const sidebar = document.getElementById("sidebar");
+            if (sidebar.style.width === "250px") {
+                sidebar.style.width = "0";
+            } else {
+                sidebar.style.width = "250px";
+            }
+        }
+    </script>
 </body>
 </html>
