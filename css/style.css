@@ -1,22 +1,11 @@
-/* Umum */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
 
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Header */
 .header {
     background-color: #B71C1C;
     color: white;
@@ -34,8 +23,15 @@ body {
 
 .app-icon {
     height: 60px;
+    /* Tetapkan tinggi ikon menjadi 60px */
     width: auto;
+    /* Lebar menyesuaikan proporsi asli */
     margin-right: 10px;
+}
+
+.app-info {
+    display: flex;
+    align-items: center;
 }
 
 .menu-button {
@@ -46,7 +42,6 @@ body {
     cursor: pointer;
 }
 
-/* Sidebar */
 .sidebar {
     height: 100%;
     width: 0;
@@ -80,30 +75,57 @@ body {
     font-size: 36px;
 }
 
-/* Typography */
-h1, h2, h3 {
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
     color: #B71C1C;
 }
 
-p, ul {
+p {
     color: #555;
 }
 
-ul {
-    list-style-type: disc;
-    margin-left: 20px;
+.button-container {
+    text-align: center;
+    margin-top: 20px;
 }
 
-/* Card */
+.playstore-button {
+    height: 40px;
+    /* Tetapkan tinggi tombol menjadi 40px */
+    width: auto;
+    /* Lebar menyesuaikan proporsi asli */
+    cursor: pointer;
+}
+
+.features {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features li {
+    background: #fde0dc;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
 .card {
     background: #fff;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 10px;
@@ -112,44 +134,4 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
-}
-
-/* Button Containers */
-.button-container {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.button-container img {
-    width: 150px; /* Ukuran tombol unduh */
-}
-
-.youtube-badge {
-    width: 150px; /* Ukuran tombol YouTube */
-}
-
-/* Responsif */
-@media (max-width: 768px) {
-    .header-content {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .menu-button {
-        align-self: flex-end;
-    }
-
-    .container {
-        margin: 10px;
-        padding: 10px;
-    }
-
-    .sidebar a {
-        font-size: 16px;
-    }
-
-    .sidebar .closebtn {
-        font-size: 30px;
-        right: 15px;
-    }
 }
