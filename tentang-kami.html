@@ -8,28 +8,73 @@
 </head>
 <body>
     <!-- Header Section -->
-    <div class="header">
-        <h1>Tentang Kami</h1>
-    </div>
+    <header class="header">
+        <div class="header-content">
+            <img src="images/app_icon.png" alt="Mitra PPOB Icon" class="app-icon">
+            <div class="app-info">
+                <h1>Mitra PPOB</h1>
+            </div>
+            <button class="menu-button" onclick="toggleNav()">&#9776;</button>
+        </div>
+    </header>
 
-    <!-- Navigation Menu -->
-    <div class="nav">
+    <!-- Navigation Menu (Sidebar) -->
+    <nav id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a>
         <a href="index.html">Home</a>
-        <a href="form-pendaftaran.html">Pendaftaran</a>
+        <a href="info-pendaftaran.html">Info Pendaftaran</a>
         <a href="kebijakan-privasi.html">Kebijakan Privasi</a>
         <a href="syarat-dan-ketentuan.html">Syarat dan Ketentuan</a>
         <a href="tentang-kami.html">Tentang Kami</a>
-    </div>
+    </nav>
 
     <!-- Main Content Container -->
     <div class="container">
         <h2>Tentang Kami</h2>
-        <p>Mitra PPOB adalah sebuah aplikasi inovatif yang menyediakan solusi mudah dan terjangkau untuk membuat server pulsa.</p>
+        <p>Mitra PPOB adalah sebuah aplikasi inovatif yang didesain untuk mempermudah pengguna dalam mengelola dan mengoperasikan server pulsa melalui akun Firebase. Kami berkomitmen untuk memberikan layanan terbaik dan solusi yang terjangkau bagi semua pengguna, baik itu individu maupun bisnis kecil menengah.</p>
+        <p>Aplikasi ini dikembangkan oleh tim profesional yang memiliki pengalaman luas di bidang teknologi dan pengelolaan server. Dengan antarmuka yang user-friendly dan fitur yang canggih, Mitra PPOB memungkinkan siapa saja, termasuk mereka yang tidak memiliki latar belakang teknis, untuk menjalankan server pulsa dengan mudah.</p>
+        
+        <h3>Visi dan Misi</h3>
+        <p><strong>Visi:</strong> Menjadi solusi terdepan dalam pengelolaan server pulsa yang mudah digunakan dan terjangkau bagi semua kalangan.</p>
+        <p><strong>Misi:</strong></p>
+        <ul>
+            <li>Menyediakan aplikasi yang handal dan mudah digunakan.</li>
+            <li>Memberikan layanan pelanggan yang responsif dan profesional.</li>
+            <li>Terus mengembangkan fitur-fitur baru yang sesuai dengan kebutuhan pengguna.</li>
+        </ul>
+
+        <h3>Tim Kami</h3>
+        <p>Tim Mitra PPOB terdiri dari para ahli di bidang teknologi informasi, pengembangan aplikasi, dan layanan pelanggan. Kami berusaha untuk selalu memberikan yang terbaik bagi pengguna melalui inovasi dan dedikasi kami.</p>
+
+        <h3>Kontak Kami</h3>
+        <p>Jika Anda memiliki pertanyaan, saran, atau ingin mengetahui lebih lanjut tentang layanan kami, jangan ragu untuk menghubungi kami:</p>
+        <ul>
+            <li>Email: support@mitrappob.com</li>
+            <li>Telepon: +62 123 4567 890</li>
+            <li>Alamat: Jl. Teknologi No. 123, Jakarta, Indonesia</li>
+        </ul>
+
+        <h3>Ikuti Kami di YouTube</h3>
+        <p>Kunjungi kanal YouTube kami untuk mendapatkan tutorial, tips, dan update terbaru tentang Mitra PPOB:</p>
+        <a href="https://www.youtube.com/channel/UCxxxxxx" target="_blank">
+            <img src="images/youtube_badge.png" alt="YouTube Badge" class="youtube-badge">
+        </a>
     </div>
 
     <!-- Footer Section -->
     <footer>
         &copy; 2024 Mitra PPOB. All rights reserved.
     </footer>
+
+    <script>
+        function toggleNav() {
+            const sidebar = document.getElementById("sidebar");
+            if (sidebar.style.width === "250px") {
+                sidebar.style.width = "0";
+            } else {
+                sidebar.style.width = "250px";
+            }
+        }
+    </script>
 </body>
 </html>
