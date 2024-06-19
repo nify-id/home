@@ -8,28 +8,24 @@
 </head>
 <body>
     <!-- Header Section -->
-    <div class="header">
+    <header class="header">
         <div class="header-content">
             <img src="images/app_icon.png" alt="Mitra PPOB Icon" class="app-icon">
             <div class="app-info">
                 <h1>Mitra PPOB</h1>
-                <p>Solusi Mudah dan Terjangkau untuk Membuat Server Pulsa</p>
             </div>
+            <button class="menu-button" onclick="toggleNav()">&#9776;</button>
         </div>
-    </div>
+    </header>
 
-    <!-- Navigation Menu -->
-    <nav class="nav">
-        <div class="dropdown">
-            <button class="dropbtn">Menu</button>
-            <div class="dropdown-content">
-                <a href="index.html">Home</a>
-                <a href="form-pendaftaran.html">Pendaftaran</a>
-                <a href="kebijakan-privasi.html">Kebijakan Privasi</a>
-                <a href="syarat-dan-ketentuan.html">Syarat dan Ketentuan</a>
-                <a href="tentang-kami.html">Tentang Kami</a>
-            </div>
-        </div>
+    <!-- Navigation Menu (Sidebar) -->
+    <nav id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="form-pendaftaran.html">Pendaftaran</a>
+        <a href="kebijakan-privasi.html">Kebijakan Privasi</a>
+        <a href="syarat-dan-ketentuan.html">Syarat dan Ketentuan</a>
+        <a href="tentang-kami.html">Tentang Kami</a>
     </nav>
 
     <!-- Main Content Container -->
@@ -60,5 +56,16 @@
     <footer>
         &copy; 2024 Mitra PPOB. All rights reserved.
     </footer>
+
+    <script>
+        function toggleNav() {
+            const sidebar = document.getElementById("sidebar");
+            if (sidebar.style.width === "250px") {
+                sidebar.style.width = "0";
+            } else {
+                sidebar.style.width = "250px";
+            }
+        }
+    </script>
 </body>
 </html>

@@ -9,63 +9,67 @@ body {
 .header {
     background-color: #B71C1C;
     color: white;
-    padding: 10px 0;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
 }
 
 .header-content {
     display: flex;
     align-items: center;
-    justify-content: center;
-    max-width: 800px;
-    margin: 0 auto;
 }
 
 .app-icon {
-    width: 80px; /* Sesuaikan ukuran ikon sesuai kebutuhan */
+    width: 40px; /* Sesuaikan ukuran ikon sesuai kebutuhan */
     margin-right: 10px;
 }
 
 .app-info {
-    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
-.nav {
-    background-color: #8A1717;
-    text-align: center;
-}
-
-.nav .dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.nav .dropdown .dropbtn {
-    background-color: #8A1717;
+.menu-button {
+    background-color: #B71C1C;
     color: white;
-    font-size: 16px;
+    font-size: 24px;
     border: none;
     cursor: pointer;
-    padding: 14px 16px;
 }
 
-.nav .dropdown .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
     z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
 
-.nav .dropdown .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
+.sidebar a {
+    padding: 10px 15px;
     text-decoration: none;
+    font-size: 18px;
+    color: #818181;
     display: block;
-    text-align: left;
+    transition: 0.3s;
 }
 
-.nav .dropdown:hover .dropdown-content {
-    display: block;
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
 }
 
 .container {
