@@ -1,22 +1,11 @@
-/* Umum */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
 
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Header */
 .header {
     background-color: #B71C1C;
     color: white;
@@ -33,9 +22,14 @@ body {
 }
 
 .app-icon {
-    height: 60px;
-    width: auto;
+    height: 60px; /* Tetapkan tinggi ikon menjadi 60px */
+    width: auto; /* Lebar menyesuaikan proporsi asli */
     margin-right: 10px;
+}
+
+.app-info {
+    display: flex;
+    align-items: center;
 }
 
 .menu-button {
@@ -46,7 +40,6 @@ body {
     cursor: pointer;
 }
 
-/* Sidebar */
 .sidebar {
     height: 100%;
     width: 0;
@@ -80,12 +73,20 @@ body {
     font-size: 36px;
 }
 
-/* Typography */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 h1, h2, h3 {
     color: #B71C1C;
 }
 
-p, ul {
+p {
     color: #555;
 }
 
@@ -94,7 +95,6 @@ ul {
     margin-left: 20px;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 10px;
@@ -105,42 +105,15 @@ footer {
     bottom: 0;
 }
 
-/* Button Containers */
 .button-container {
     text-align: center;
     margin: 20px 0;
 }
 
 .button-container img {
-    width: 150px; /* Ukuran tombol unduh */
+    width: 150px; /* Sesuaikan ukuran tombol unduh */
 }
 
 .youtube-badge {
-    width: 150px; /* Ukuran tombol YouTube */
-}
-
-/* Responsif */
-@media (max-width: 768px) {
-    .header-content {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .menu-button {
-        align-self: flex-end;
-    }
-
-    .container {
-        margin: 10px;
-        padding: 10px;
-    }
-
-    .sidebar a {
-        font-size: 16px;
-    }
-
-    .sidebar .closebtn {
-        font-size: 30px;
-        right: 15px;
-    }
+    width: 150px; /* Sesuaikan ukuran tombol YouTube */
 }
