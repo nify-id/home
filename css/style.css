@@ -82,7 +82,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2, h3 {
+h1, h2 {
     color: #B71C1C;
 }
 
@@ -90,9 +90,27 @@ p {
     color: #555;
 }
 
-ul {
-    list-style-type: disc;
-    margin-left: 20px;
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.playstore-button {
+    height: 40px; /* Tetapkan tinggi tombol menjadi 40px */
+    width: auto; /* Lebar menyesuaikan proporsi asli */
+    cursor: pointer;
+}
+
+.features {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features li {
+    background: #fde0dc;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 footer {
@@ -103,17 +121,4 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
-}
-
-.button-container {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.button-container img {
-    width: 150px; /* Sesuaikan ukuran tombol unduh */
-}
-
-.youtube-badge {
-    width: 150px; /* Sesuaikan ukuran tombol YouTube */
 }
