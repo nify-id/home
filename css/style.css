@@ -22,7 +22,8 @@ body {
 }
 
 .app-icon {
-    width: 40px; /* Sesuaikan ukuran ikon sesuai kebutuhan */
+    height: 60px; /* Tetapkan tinggi ikon menjadi 60px */
+    width: auto; /* Lebar menyesuaikan proporsi asli */
     margin-right: 10px;
 }
 
@@ -89,26 +90,41 @@ p {
     color: #555;
 }
 
+.pricing {
+    background: #fde0dc;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.pricing h3 {
+    color: #B71C1C;
+    margin: 0 0 10px 0;
+}
+
+.pricing p {
+    color: #555;
+    margin: 0 0 20px 0;
+    font-size: 18px;
+}
+
 .button-container {
     text-align: center;
     margin-top: 20px;
 }
 
-.button-container img {
-    width: 200px;
+.download-button {
+    background-color: #B71C1C;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
     cursor: pointer;
 }
 
-.features {
-    list-style-type: none;
-    padding: 0;
-}
-
-.features li {
-    background: #fde0dc;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 5px;
+.download-button:hover {
+    background-color: #8A1717;
 }
 
 footer {
