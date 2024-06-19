@@ -22,8 +22,10 @@ body {
 }
 
 .app-icon {
-    height: 60px; /* Tetapkan tinggi ikon menjadi 60px */
-    width: auto; /* Lebar menyesuaikan proporsi asli */
+    height: 60px;
+    /* Tetapkan tinggi ikon menjadi 60px */
+    width: auto;
+    /* Lebar menyesuaikan proporsi asli */
     margin-right: 10px;
 }
 
@@ -82,7 +84,8 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
+h1,
+h2 {
     color: #B71C1C;
 }
 
@@ -96,9 +99,30 @@ p {
 }
 
 .playstore-button {
-    height: 40px; /* Tetapkan tinggi tombol menjadi 40px */
-    width: auto; /* Lebar menyesuaikan proporsi asli */
+    height: 40px;
+    /* Tetapkan tinggi tombol menjadi 40px */
+    width: auto;
+    /* Lebar menyesuaikan proporsi asli */
     cursor: pointer;
+}
+
+.custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    /* warna hijau */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 50px;
+    /* radius sudut 50 */
+    cursor: pointer;
+}
+
+.custom-button:hover {
+    background-color: #45a049;
+    /* efek hover */
 }
 
 .features {
