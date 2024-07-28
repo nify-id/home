@@ -7,7 +7,7 @@ body {
 }
 
 .header {
-    background-color: #B71C1C;
+    background-color: #ff05152b;
     color: white;
     padding: 10px 20px;
     display: flex;
@@ -35,7 +35,7 @@ body {
 }
 
 .menu-button {
-    background-color: #B71C1C;
+    background-color: #ff05152b;
     color: white;
     font-size: 24px;
     border: none;
@@ -86,7 +86,7 @@ body {
 
 h1,
 h2 {
-    color: #B71C1C;
+    color: #ff05152b;
 }
 
 p {
