@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Hapus Akun - Nify</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-content">
+            <img src="images/app_icon.png" alt="Nify Icon" class="app-icon">
+            <div class="app-info">
+                <h1>Nify</h1>
+            </div>
+            <button class="menu-button" onclick="toggleNav()">&#9776;</button>
+        </div>
+    </header>
+
+    <!-- Navigation Menu (Sidebar) -->
+    <nav id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="info-pendaftaran.html">Info Pendaftaran</a>
+        <a href="kebijakan-privasi.html">Kebijakan Privasi</a>
+        <a href="syarat-dan-ketentuan.html">Syarat dan Ketentuan</a>
+        <a href="tentang-kami.html">Tentang Kami</a>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="container">
+        <h2>Info Hapus Akun</h2>
+        <p>Di Nify, kami berkomitmen untuk memberikan layanan terbaik kepada pelanggan kami. Berikut adalah informasi terkait biaya langganan dan kebijakan akun:</p>
+        
+        <h3>Biaya Langganan</h3>
+        <p>Biaya langganan untuk layanan kami akan ditampilkan di dashboard aplikasi Nify. Pastikan Anda membayar tepat waktu untuk menghindari gangguan layanan.</p>
+        
+        <h3>Keterlambatan Pembayaran</h3>
+        <p>Jika Anda telat membayar biaya langganan, Anda tidak akan dapat menggunakan layanan aplikasi Nify sampai pembayaran dilakukan.</p>
+        
+        <h3>Nonaktifkan Akun</h3>
+        <p>Jika Anda tidak membayar selama 3 bulan, akun Anda akan dinonaktifkan hingga semua tunggakan dilunasi.</p>
+        
+        <h3>Penutupan Akun</h3>
+        <p>Jika Anda tidak membayar selama 5 bulan, akun Anda akan dibanned dan tidak dapat digunakan lagi.</p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        &copy; 2024 Nify. All rights reserved.
+    </footer>
+
+    <script>
+        function toggleNav() {
+            const sidebar = document.getElementById("sidebar");
+            if (sidebar.style.width === "250px") {
+                sidebar.style.width = "0";
+            } else {
+                sidebar.style.width = "250px";
+            }
+        }
+    </script>
+</body>
+</html>
